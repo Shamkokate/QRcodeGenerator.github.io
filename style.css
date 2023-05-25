@@ -1,0 +1,84 @@
+html, body {
+    
+    margin: 0;
+    padding: 0;
+    background: #555;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    position: absolute;
+    width: 400px;
+    padding: 25px 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+
+}
+.container p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+
+}
+.container input {
+    border: 1px solid #494eea;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+    outline: 0;
+    padding: 5px;
+}
+.container button {
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    background: #494eea;
+    border: 0;
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+#imgBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imgBox img {
+    width: 100%;
+     /* padding: 20px 20px 0 0;  */
+
+}
+#imgBox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error {
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-2px);
+    }
+    50% {
+        transform: translate(0);
+    }
+    75% {
+        transform: translate(2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
